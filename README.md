@@ -15,7 +15,7 @@ Here is the board working. You can see the count, the reset, and the flag functi
 ![Chronometer Demo](img/VID_20260211_001034-ezgif.com-optimize.gif)
 
 ## Controls
-* **Reset (Button 1):** Asynchronous reset. Puts the counter to 0000.
+* **Reset (Button 1):** Reset. Puts the counter to 0000.
 * **Pause (Button 2):** Stops the count completely.
 * **Flag (Button 3):** Freezes the display value. The internal counter keeps counting.
 
