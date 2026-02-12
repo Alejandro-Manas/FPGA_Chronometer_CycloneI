@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------------------
 -- Module:      X_Digits_BCD_Counter_Sim
--- Author:      Alejandro Mañas
+-- Author:      Alejandro MaÃ±as
 -- Target:      Cyclone I (Legacy)
 -- Description: 
 --    Module to count on BCD format
