@@ -24,7 +24,7 @@ A key feature I designed is the complete independence between the **Internal Cou
 My code is designed to be easily adaptable by changing the `GENERIC` constants in the top-level file:
 
 * **Clock Frequency (`FREQ_CLK`):** Set to 50 MHz by default, but adaptable to other boards.
-* **Counting Precision (`FREQ_COUNT`):** Defines the counting speed (powers of 10).
+* **Counting Precision (`FREQ_COUNT`):** Defines the counting speed. Designed to work with **powers of 10** (e.g., 100 Hz, 1000 Hz) to maintain base-10 logic.
 * **Scalability (`DIGIT_NUM` vs `DISPL_NUM`):** As explained above, the number of internal digits (`DIGIT_NUM`) is independent of the physical displays (`DISPL_NUM`). You can count up to massive numbers, and the controller will adapt the 4 displays to show the relevant part.
 
 ## Controls
