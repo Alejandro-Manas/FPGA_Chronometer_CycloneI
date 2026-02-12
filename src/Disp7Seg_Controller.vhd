@@ -1,7 +1,7 @@
 ----------------------------------------------------------------------------------
 -- Module:      Disp7Seg_Controller
 -- Author:      Alejandro Mañas
--- Target:      Cyclone I (Legacy)
+-- Target:      Cyclone I 
 -- Description:
 --    Rotates between the display to show digits on all the displays simultaneously 
 --    Configurable Clock Frequency
