@@ -49,4 +49,4 @@ I developed the project dividing it into these custom VHDL files:
 
 ## Simulation
 I simulated all the modules before testing them on the board to ensure the logic was correct.
-You can check the **SIMULATION_REPORT.md** file in this repository to see the waveforms and the verification steps.
+You can check the **[SIMULATION_REPORT.md](SIMULATION_REPORT.md)** file in this repository to see the waveforms and the verification steps.
