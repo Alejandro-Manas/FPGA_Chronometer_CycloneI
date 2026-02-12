@@ -1,7 +1,7 @@
 # FPGA Chronometer - Cyclone I
 
 **Author:** Alejandro Mañas  
-**Board:** Altera Cyclone I (EP1C3T144)  
+**Board:** Altera Cyclone I (EP1C3T144C8N)  
 **Language:** VHDL
 
 ## Description
