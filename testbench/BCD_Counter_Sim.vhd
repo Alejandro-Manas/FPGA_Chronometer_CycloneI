@@ -1,7 +1,7 @@
 ----------------------------------------------------------------------------------
 -- Module:      BCD_Counter_Sim
 -- Author:      Alejandro Mañas
--- Target:      Cyclone I (Legacy)
+-- Target:      Cyclone I
 -- Description:
 --    Module to count on BCD format
 --    Can count up to nine
