@@ -25,7 +25,11 @@ My code is designed to be easily adaptable by changing the `GENERIC` constants i
 
 * **Clock Frequency (`FREQ_CLK`):** Set to 50 MHz by default, but adaptable to other boards.
 * **Counting Precision (`FREQ_COUNT`):** Defines the counting speed. Designed to work with **powers of 10** (e.g., 100 Hz, 1000 Hz) to maintain base-10 logic.
-* **Scalability (`DIGIT_NUM` vs `DISPL_NUM`):** As explained above, the number of internal digits (`DIGIT_NUM`) is independent of the physical displays (`DISPL_NUM`). You can count up to massive numbers, and the controller will adapt the 4 displays to show the relevant part.
+* **True Scalability (`DIGIT_NUM` & `DISPL_NUM`):**
+    * **Internal Counter:** The number of BCD digits (`DIGIT_NUM`) is unlimited.
+    * **Chronometer Logic:** The main controller is also **hardware-agnostic**. It can manage any number of displays (`DISPL_NUM`). If you set it to 8 or 16 displays, the logic will automatically format the data for that width.
+    * **Hardware Limitation:** The current `Disp7Seg_Controller` module is the only component limited to 4, strictly because the physical Cyclone I board only has 4 displays.
+    * *Adaptability:* If you replace the 7-segment driver with one designed for a bigger board (e.g., 8 displays), my `Chronometer_Controller` will adapt instantly just by changing the `DISPL_NUM` generic, without rewriting the logic.
 
 ## Controls
 * **Reset (Button 1):** Asynchronous reset. Puts the counter to 0000.
