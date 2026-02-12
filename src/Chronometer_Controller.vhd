@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------------------
 -- Module:      Chronometer_Controller
--- Author:      Alejandro Mañas
+-- Author:      Alejandro MaÃ±as
 -- Target:      Cyclone I (Legacy)
 -- Description: 
 --    Configurable number of displays (fixed to four by the controller of the seven segment displays)
