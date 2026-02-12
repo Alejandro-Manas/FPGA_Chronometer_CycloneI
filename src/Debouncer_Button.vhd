@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------------------
 -- Module:      Debouncer_Button (Toggle Version)
--- Author:      Alejandro Mañas
+-- Author:      Alejandro MaÃ±as
 -- Target:      Cyclone I (Legacy)
 -- Description: 
 --    Filters mechanical bounce from a push-button. 
