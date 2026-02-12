@@ -7,6 +7,8 @@ This document details the functional verification of each VHDL module through Mo
 ## 1. BCD_Counter
 **Objective:** Verify the basic 0-9 counting unit with enable and reset priority.
 
+![](img/BCD_Counter_Sim.png)
+
 | Parameter | Value |
 | :--- | :--- |
 | Clock Frequency | 50 MHz |
@@ -22,6 +24,8 @@ This document details the functional verification of each VHDL module through Mo
 
 ## 2. X_Digits_BCD_Counter
 **Objective:** Verify the communication and carry logic between multiple BCD stages.
+
+![](img/X_Digits_BCD_Counter_Sim.png)
 
 | Parameter | Value |
 | :--- | :--- |
@@ -43,6 +47,8 @@ This document details the functional verification of each VHDL module through Mo
 ## 3. Disp7Seg_Driver
 **Objective:** Verify the combinational logic for hexadecimal to 7-segment decoding.
 
+![](img/Disp7Seg_Driver.png)
+
 | Parameter | Value |
 | :--- | :--- |
 | Duration | 250 ns |
@@ -59,6 +65,8 @@ This document details the functional verification of each VHDL module through Mo
 ## 4. Disp7Seg_Controller
 **Objective:** Verify the multiplexing logic and refresh rate for the 4-display interface.
 
+![](img/Disp7Seg_Controller.png)
+
 | Parameter | Value |
 | :--- | :--- |
 | Clock Frequency | 50 MHz |
@@ -73,6 +81,14 @@ This document details the functional verification of each VHDL module through Mo
 
 ## 5. Chronometer_Controller (Main Logic)
 **Objective:** Verify the State Machine, Pause, and Flag (Lap time) functionality.
+
+![Cursor 1](img/Disp7Seg_Controller_Cursor_1.png)
+![Cursor 2](img/Disp7Seg_Controller_Cursor_2.png)
+![Cursor 3](img/Disp7Seg_Controller_Cursor_3.png)
+![Cursor 4](img/Disp7Seg_Controller_Cursor_4.png)
+![Cursor 5](img/Disp7Seg_Controller_Cursor_5.png)
+![Cursor 6](img/Disp7Seg_Controller_Cursor_6.png)
+![Cursor 7](img/Disp7Seg_Controller_Cursor_7.png)
 
 | Parameter | Value |
 | :--- | :--- |
@@ -91,6 +107,8 @@ This document details the functional verification of each VHDL module through Mo
 
 ## 6. Chronometer_Controller (Decimal Point Mechanic)
 **Objective:** Verify the "Auto-Range" logic where the decimal point appears after the first second.
+
+![Cursor 1](img/Disp7Seg_Controller_DP.png)
 
 ### Functional Checklist:
 - [ ] **Enable Logic:** The DP remains disabled until the counter reaches its first second.
