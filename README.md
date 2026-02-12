@@ -14,15 +14,18 @@ Here is the board working. You can see the count, the reset, and the flag functi
 
 ![Chronometer Demo](img/demo.gif)
 
+## Smart Display Logic (Auto-Range)
+A key feature I designed is the complete independence between the **Internal Counter Digits** and the **Physical Displays**.
+
+* **Dynamic Windowing:** If the internal counter is configured to have huge numbers (e.g., 8 or 100 digits) but the board only has 4 displays, my logic automatically **shifts the view** to show the most significant active digits.
+* **Floating Decimal Point:** The decimal point is not fixed to a physical LED. It moves dynamically with the numbers so it always stays in the correct mathematical position, even when the display shifts.
+
 ## Configuration (Generics)
 My code is designed to be easily adaptable by changing the `GENERIC` constants in the top-level file:
 
 * **Clock Frequency (`FREQ_CLK`):** Set to 50 MHz by default, but adaptable to other boards.
-* **Refresh Rate (`REFRESH_RATE`):** Controls how fast the displays switch (multiplexing).
-* **Counting Precision (`FREQ_COUNT`):** Defines the counting speed. Designed to work with **powers of 10** (e.g., 100 Hz, 1000 Hz) to maintain base-10 logic.
-* **Scalability (`DIGIT_NUM`):**
-    * The core logic (`Chronometer_Controller` and `X_Digits_BCD_Counter`) is **fully scalable**. It can handle any number of digits (e.g., 6, 8, etc.) just by changing the generic value.
-    * *Note:* The limitation to 4 digits comes from the physical board hardware. I wrote the `Disp7Seg_Controller` specifically to interface with these 4 physical displays, but my chronometer logic is ready for larger systems.
+* **Counting Precision (`FREQ_COUNT`):** Defines the counting speed (powers of 10).
+* **Scalability (`DIGIT_NUM` vs `DISPL_NUM`):** As explained above, the number of internal digits (`DIGIT_NUM`) is independent of the physical displays (`DISPL_NUM`). You can count up to massive numbers, and the controller will adapt the 4 displays to show the relevant part.
 
 ## Controls
 * **Reset (Button 1):** Asynchronous reset. Puts the counter to 0000.
@@ -32,7 +35,7 @@ My code is designed to be easily adaptable by changing the `GENERIC` constants i
 ## Modules
 I developed the project dividing it into these custom VHDL files:
 
-1.  **Chronometer_Controller:** The main file. It connects the buttons, the counter, and the display driver. It contains the state machine.
+1.  **Chronometer_Controller:** The main file. It contains the state machine and the **smart windowing logic** to map the large internal counter to the small physical display.
 2.  **X_Digits_BCD_Counter:** It counts in BCD format (multi-digit). It is configurable (you can change the number of digits).
 3.  **BCD_Counter:** The basic unit that counts from 0 to 9. It is used inside the X_Digits counter.
 4.  **Disp7Seg_Controller:** Controls the 4 displays using multiplexing. I designed this module to match the board's 4-digit physical interface.
