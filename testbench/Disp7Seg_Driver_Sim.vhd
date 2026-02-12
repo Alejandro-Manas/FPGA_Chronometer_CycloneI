@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------------------
 -- Module:      Disp 7 Seg Driver
--- Author:      Alejandro Mañas
+-- Author:      Alejandro MaÃ±as
 -- Target:      Cyclone I (Legacy)
 -- Description: 
 --    Transform 4 bits vector into an hexadecimal value shown on a 7 segment display
