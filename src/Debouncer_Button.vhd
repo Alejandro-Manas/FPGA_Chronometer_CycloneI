@@ -1,7 +1,7 @@
 ----------------------------------------------------------------------------------
 -- Module:      Debouncer_Button (Toggle Version)
 -- Author:      Alejandro Mañas
--- Target:      Cyclone I (Legacy)
+-- Target:      Cyclone I 
 -- Description: 
 --    Filters mechanical bounce from a push-button. 
 --    Functions as a toggle switch: Pressing the button inverts the output state 
