@@ -82,12 +82,19 @@ This document details the functional verification of each VHDL module through Mo
 ## 5. Chronometer_Controller (Main Logic)
 **Objective:** Verify the State Machine, Pause, and Flag (Lap time) functionality.
 
+Cursor 1
 ![Cursor 1](img/Disp7Seg_Controller_Cursor_1.png)
+Cursor 2
 ![Cursor 2](img/Disp7Seg_Controller_Cursor_2.png)
+Cursor 3
 ![Cursor 3](img/Disp7Seg_Controller_Cursor_3.png)
+Cursor 4
 ![Cursor 4](img/Disp7Seg_Controller_Cursor_4.png)
+Cursor 5
 ![Cursor 5](img/Disp7Seg_Controller_Cursor_5.png)
+Cursor 6
 ![Cursor 6](img/Disp7Seg_Controller_Cursor_6.png)
+Cursor 7
 ![Cursor 7](img/Disp7Seg_Controller_Cursor_7.png)
 
 | Parameter | Value |
