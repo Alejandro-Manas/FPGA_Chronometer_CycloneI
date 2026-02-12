@@ -1,7 +1,7 @@
 ----------------------------------------------------------------------------------
 -- Module:      Chronometer_Controller_Sim_DP_Pos
 -- Author:      Alejandro Mañas
--- Target:      Cyclone I (Legacy)
+-- Target:      Cyclone I 
 -- Description: 
 --    Configurable number of displays (fixed to four by the controller of the seven segment displays)
 --    Configurable number of BCD digits
