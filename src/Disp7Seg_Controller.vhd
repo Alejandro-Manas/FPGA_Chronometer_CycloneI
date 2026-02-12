@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------------------
 -- Module:      Disp7Seg_Controller
--- Author:      Alejandro Mañas
+-- Author:      Alejandro MaÃ±as
 -- Target:      Cyclone I (Legacy)
 -- Description:
 --    Rotates between the display to show digits on all the displays simultaneously 
