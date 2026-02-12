@@ -23,10 +23,11 @@ Here is the board working. You can see the count, the reset, and the flag functi
 The project is divided into these VHDL files:
 
 1.  **Chronometer_Controller:** The main file. It connects the buttons, the counter, and the display driver. It contains the state machine.
-2.  **X_Digits_BCD_Counter:** It counts in BCD format. It is configurable (you can change the number of digits).
-3.  **Disp7Seg_Controller:** Controls the 4 displays using multiplexing (refresh rate is configurable).
-4.  **Disp7Seg_Driver:** Decodes the number to the 7-segment format.
-5.  **Debouncer:** Filters the noise from the mechanical buttons.
+2.  **X_Digits_BCD_Counter:** It counts in BCD format (multi-digit). It is configurable (you can change the number of digits).
+3.  **BCD_Counter:** The basic unit that counts from 0 to 9. It is used inside the X_Digits counter.
+4.  **Disp7Seg_Controller:** Controls the 4 displays using multiplexing (refresh rate is configurable).
+5.  **Disp7Seg_Driver:** Decodes the number to the 7-segment format.
+6.  **Debouncer:** Filters the noise from the mechanical buttons.s.
 
 ## Simulation
 I simulated all the modules before testing them on the board to ensure the logic was correct.
